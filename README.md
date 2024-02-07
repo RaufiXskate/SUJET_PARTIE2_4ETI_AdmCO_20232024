@@ -17,7 +17,7 @@ Pour chaque fonctionnalité, vous devrez :
 1. **Mettre en place la logique des tests associés**.
 1. **Procéder à la génération du whl** (1).
 1. **Automatiser les phases de test et de création du .whl sur GitLab** (2).
-1. **Autres ...
+1. **Autres ...**
 
 ### Fonctionnalité 1
 
