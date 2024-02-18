@@ -200,13 +200,18 @@ Pour installer pip : ```sudo apt install pip```
 
 Pour la partie tests de fonctionnalité :
 
-La librairie unittest et la librairie os est déjà inclue dans python.
+La librairie unittest est déjà inclue dans python.
 Pour installer logging : ```pip install logging```
 
 Pour les bonnes pratiques :
 
 Pour installer pylint : ```pip install pylint```
 Pour installer black : ```pip install black```
+
+Utiles dans les classes :
+
+Librairies `os` et `random` sont déjà inclues dans python.
+
 
 ## VII. Envoi de la partie fonctionnelle en ligne sur le site https://test.pypi.org/
 
@@ -236,7 +241,7 @@ Pour rendre accessible la partie fonctionnelle du projet (la classe qui réalise
 ```
 pip install -i https://test.pypi.org/simple/ package-rps-adaptator-game-cobra
 ```
-Ci-dessous on peut voir que le fichier a bien été mis en ligne sur le site :
+Ci-dessous on peut voir que le fichier a bien été mis en ligne sur le site (fonctionnalité 3, voir chaque dépôt sur les branches fonctionnalite/numero_whl):
 
 ![preuve_mise_en_ligne](images/capturepypi.png)
 
