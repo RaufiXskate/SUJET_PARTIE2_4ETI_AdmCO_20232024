@@ -83,6 +83,58 @@ c) Librairie os :
 
 Cette librairie permet de fournir des fonctions pour interagir avec le système d'exploitation, dans notre cas on se sert de cette librairie pour supprimer un fichier avant l'exécution des tests.
 
+Pour la fonctionnalité 3, on obtient la sortie console ci-dessous :
+
+```
+Reloaded modules: rps_game, rps_simple_game, rps_multiple_game
+INFO:Journal_evenements:Debut des tests de classe AdaptatorRps
+INFO:Journal_evenements:Fichier supprimé
+INFO:Journal_evenements:Test valeur par défaut machine OK
+WARNING:root:Enregistrement score actuel => OK
+INFO:Journal_evenements:Test lancement 1ere partie OK
+WARNING:root:Enregistrement score actuel => OK
+INFO:Journal_evenements:Test lancement 2eme partie OK
+WARNING:root:Enregistrement score actuel => OK
+INFO:Journal_evenements:Test lancement 1ere partie OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.019s
+
+OK
+INFO:Journal_evenements:Fin des tests classe AdaptatorRps
+Le fichier spécifié n'existe pas.
+Le fichier d'historique des parties est vide (choix de la machine par défaut pour 1ere partie) !
+joueur 1 gagne (jeu1) !
+les lignes du fichiers 
+ ["['Cody', 'P', 1]"]
+Les parties gagnantes :  [['Cody', ' P']] il y en a =  1
+Les joueurs ont gagné leurs parties avec les choix suivants :
+la proportion de R =  0.0
+la proportion de S =  0.0
+la proportion de P =  100.0
+Le choix de la machine est : S
+joueur 1 gagne (jeu1) !
+les lignes du fichiers 
+ ["['Cody', 'P', 1]", "['Cody', 'R', 1]"]
+Les parties gagnantes :  [['Cody', ' P'], ['Cody', ' R']] il y en a =  2
+Les joueurs ont gagné leurs parties avec les choix suivants :
+la proportion de R =  50.0
+la proportion de S =  0.0
+la proportion de P =  50.0
+Le choix de la machine est : R
+joueur 1 gagne (jeu1) !
+les lignes du fichiers 
+ ["['Cody', 'P', 1]", "['Cody', 'R', 1]", "['Maverick', 'R', 1]"]
+Les parties gagnantes :  [['Cody', ' P'], ['Cody', ' R'], ['Maverick', ' R']] il y en a =  3
+Les joueurs ont gagné leurs parties avec les choix suivants :
+la proportion de R =  66.66666666666666
+la proportion de S =  0.0
+la proportion de P =  33.33333333333333
+Le choix de la machine est : P
+```
+
+On remarque que les logs ont bien été ajouté dans le fichier et que les tests se sont déroulés sans erreur.
+
 ## III. Importations et PYTHONPATH
 
 Pour utiliser les classes de test et créer des objets d'autres classes il faut importer les classes correspondantes :
@@ -146,9 +198,9 @@ Lancer un environnement virtuel (cf section "Environnement virtuel") pour y inst
 
 Pour installer pip : ```sudo apt install pip```
 
-Pour la partie test :
+Pour la partie tests de fonctionnalité :
 
-La librairie unittest est déjà inclue dans python.
+La librairie unittest et la librairie os est déjà inclue dans python.
 Pour installer logging : ```pip install logging```
 
 Pour les bonnes pratiques :
