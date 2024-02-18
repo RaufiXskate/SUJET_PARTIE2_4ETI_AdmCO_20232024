@@ -97,7 +97,7 @@ export PYTHONPATH=/chemin_absolu_du_package
 ```
 Sauvegarder le fichier.
 
-## VI. Applications des bonnes pratiques
+## IV. Applications des bonnes pratiques
 
 1) Pep 8 et Pep 20
 
