@@ -218,5 +218,6 @@ et https://blog.kulakowski.fr/post/uploader-un-package-sur-pypi
 
 Intégration continue de gitlab : https://galadrim.fr/blog/comment-utiliser-gitlab-ci-cd-pour-ameliorer-votre-flow-de-developpement
 
-Pour des questions diverses notamment la gestion des fichiers avec Python : chat.openai.com
+Questions concernant la gestion des fichiers avec Python : chat.openai.com
 
+Les avertissements de pylint : https://pylint.readthedocs.io/en/stable/
